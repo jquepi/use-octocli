@@ -5,9 +5,6 @@ inputs:
   project:
     description: 'Name or ID of the project.'
     required: true
-  package_version:
-    description: 'Default version number of all packages to use for this release. Override per-package using `input_package`.'
-    required: true
   octopus_server:
     description: 'Server URL'
     required: true

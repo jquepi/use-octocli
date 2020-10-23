@@ -9,7 +9,6 @@ func octocli() []string {
 	var optionalArgs []string
 
 	arg = append(arg, "--project=${INPUT_PROJECT}")
-	arg = append(arg, "--packageVersion=${INPUT_PACKAGE_VERSION}")
 	arg = append(arg, "--server=${INPUT_OCTOPUS_SERVER}")
 	arg = append(arg, "--apikey=${API_KEY}")
 
