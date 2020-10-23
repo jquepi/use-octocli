@@ -1,0 +1,25 @@
+name: octocli
+description: 'Runs commands via the Octopus CLI'
+
+inputs:
+  project:
+    description: 'Name or ID of the project.'
+    required: true
+  package_version:
+    description: 'Default version number of all packages to use for this release. Override per-package using `input_package`.'
+    required: true
+  octopus_server:
+    description: 'Server URL'
+    required: true
+  api_key:
+    description: 'API key'
+    required: true
+  space:
+    description: 'Space ID'
+    required: false
+
+runs:
+  using: composite
+  steps:
+    - run: go run main.go
+      shell: bash
