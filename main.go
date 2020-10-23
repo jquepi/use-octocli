@@ -5,6 +5,7 @@ func main() {
 }
 
 func octocli() []string {
+	set := true
 	var arg []string
 	var optionalArgs []string
 
@@ -12,7 +13,7 @@ func octocli() []string {
 	arg = append(arg, "--server=${INPUT_OCTOPUS_SERVER}")
 	arg = append(arg, "--apikey=${API_KEY}")
 
-	if set == true {
+	if set {
 		optionalArgs = append(arg, "--space=${INPUT_SPACE}")
 		return optionalArgs
 	}
