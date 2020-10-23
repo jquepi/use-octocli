@@ -1,0 +1,24 @@
+{
+  "name": "useoctocli",
+  "version": "1.0.0",
+  "description": "Use the Octopus Deploy CLI in GitHub Actions",
+  "main": "useoctocli.js",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OctopusDeploy/use-octocli.git"
+  },
+  "author": "Octopus Deploy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OctopusDeploy/use-octocli/issues"
+  },
+  "homepage": "https://github.com/OctopusDeploy/use-octocli#readme"
+}
