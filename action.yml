@@ -1,0 +1,5 @@
+name: Octopus Playground
+description: An Octopus Playground
+runs:
+  using: node12
+  main: dist/useoctocli.js
