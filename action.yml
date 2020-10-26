@@ -1,5 +1,18 @@
 name: Octopus Playground
 description: An Octopus Playground
+inputs:
+    project:
+      description: 'Octopus Deploy Project'
+      required: false
+    octopus-server:
+      description: 'Octopus Server URL'
+      required: true
+    api-key:
+      description: 'Octopus Server API Key'
+      required: true
+    space:
+      description: 'Space ID that you wish to target on the Octopus Server'
+      required: false
 runs:
   using: node12
   main: dist/useoctocli.js

@@ -17,9 +17,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+
+    - uses: OctopusDeploy/install-octocli@v1
       
     - name: use-octocli
       uses: OctopusDeploy/use-octocli@v1
       with:
         project: "API"
         octopus-server: "https://mikelevandemo.octopus.app/"
+        api-key: ${{ secrets.apiKey }}
